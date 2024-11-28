@@ -1,42 +1,46 @@
 import React from "react";
-import { FaCameraRetro } from "react-icons/fa";
-import { GiNotebook } from "react-icons/gi";
-import { SlNote } from "react-icons/sl";
+import { FaDollarSign } from "react-icons/fa";
+import { FaShippingFast } from "react-icons/fa";
+import { FaUserFriends } from "react-icons/fa";
 
 const skillsData = [
   {
     name: "Best Price",
     icon: (
-      <FaCameraRetro className="text-5xl text-primary group-hover:text-black duration-300" />
+      <FaDollarSign className="text-5xl text-primary group-hover:text-black duration-300" />
     ),
     link: "#",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    description:
+      "We offer the best prices on authentic auto parts imported directly from Japan, ensuring unbeatable value for quality parts.",
     aosDelay: "0",
   },
   {
     name: "Fast and Safe",
     icon: (
-      <GiNotebook className="text-5xl text-primary group-hover:text-black duration-300" />
+      <FaShippingFast className="text-5xl text-primary group-hover:text-black duration-300" />
     ),
     link: "#",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    description:
+      "Our reliable shipping and handling processes ensure that your auto parts arrive quickly and safely, no matter where you are.",
     aosDelay: "500",
   },
   {
-    name: "Experience Drivers",
+    name: "Experienced Suppliers",
     icon: (
-      <SlNote className="text-5xl text-primary group-hover:text-black duration-500" />
+      <FaUserFriends className="text-5xl text-primary group-hover:text-black duration-500" />
     ),
     link: "#",
-    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    description:
+      "We work with trusted suppliers and have years of experience in sourcing high-quality auto parts to meet your needs.",
     aosDelay: "1000",
   },
 ];
+
 const Services = () => {
   return (
     <>
       <span id="about"></span>
-      <div className="dark:bg-black dark:text-white py-14 sm:min-h-[600px] sm:grid sm:place-items-center">
+      <div className="bg-[#f0f5f9] dark:bg-black dark:text-white py-14 sm:min-h-[600px] sm:grid sm:place-items-center">
         <div className="container">
           <div className="pb-12">
             <h1
@@ -52,17 +56,11 @@ const Services = () => {
                 key={skill.name}
                 data-aos="fade-up"
                 data-aos-delay={skill.aosDelay}
-                className="card text-center group space-y-3 sm:space-y-6 p-4 sm:py-16 bg-dark  hover:bg-primary duration-300 text-white hover:text-black rounded-lg"
+                className="card text-center group space-y-3 sm:space-y-6 p-4 sm:py-16 bg-dark hover:bg-primary duration-300 text-white hover:text-black rounded-lg"
               >
                 <div className="grid place-items-center">{skill.icon}</div>
                 <h1 className="text-2xl font-bold">{skill.name}</h1>
                 <p>{skill.description}</p>
-                <a
-                  href={skill.link}
-                  className="inline-block text-lg font-semibold py-3 text-primary group-hover:text-black duration-300"
-                >
-                  Learn more
-                </a>
               </div>
             ))}
           </div>
