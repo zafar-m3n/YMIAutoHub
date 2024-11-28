@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Home from "./pages/home";
-import ContactPage from "./pages/contact";
+// Component imports
+import Navbar from "../../components/Navbar/Navbar";
+import Hero from "../../components/Hero/Hero";
+import Services from "../../components/Services/Services";
+import CarList from "../../components/CarList/CarList";
+import Footer from "../../components/Footer/Footer";
 
-const App = () => {
+const Home = () => {
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
@@ -33,15 +36,14 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
-      <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
+      <Navbar theme={theme} setTheme={setTheme} />
+      <Hero theme={theme} />
+      <Services />
+      <CarList />
+      <Footer />
+    </div>
   );
 };
 
-export default App;
+export default Home;
