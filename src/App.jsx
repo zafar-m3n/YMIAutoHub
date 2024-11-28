@@ -45,8 +45,6 @@ const App = () => {
       <Hero theme={theme} />
       <Services />
       <CarList />
-      <Testimonial />
-      <AppStoreBanner />
       <Contact />
       <Footer />
     </div>
