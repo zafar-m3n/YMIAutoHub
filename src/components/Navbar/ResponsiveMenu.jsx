@@ -4,7 +4,6 @@ import { FaUserCircle } from "react-icons/fa";
 import { Navlinks } from "./Navbar";
 
 const ResponsiveMenu = ({ showMenu }) => {
-  console.log("showMenu", showMenu);
   return (
     <div
       className={`${
@@ -13,10 +12,10 @@ const ResponsiveMenu = ({ showMenu }) => {
     >
       <div className="card">
         <div className="flex items-center justify-start gap-3">
-          <FaUserCircle size={50} />
+          {/* <FaUserCircle size={50} /> */}
           <div>
-            <h1>Hello User</h1>
-            <h1 className="text-sm text-slate-500">Premium user</h1>
+            <h1 className="text-xl">YMI Auto Hub (Pvt) Ltd.</h1>
+            {/* <h1 className="text-sm text-slate-500">Premium user</h1> */}
           </div>
         </div>
         <nav className="mt-12">
@@ -33,7 +32,9 @@ const ResponsiveMenu = ({ showMenu }) => {
       </div>
       <div className="footer">
         <h1>
-          Made with ❤ by <a href="https://dilshad-ahmed.github.io/">Dilshad</a>{" "}
+          <h1>
+            Made with ❤ by <a href="mailto:thezafar.m3n@gmail.com">zafar.m3n</a>
+          </h1>
         </h1>
       </div>
     </div>
