@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 const DefaultLayout = () => {
   return (
-    <div className="flex flex-col min-h-screen font-roboto">
+    <div className="flex flex-col min-h-screen font-roboto bg-gray-50">
       <header className="sticky top-0 z-50">
         <Header />
       </header>
