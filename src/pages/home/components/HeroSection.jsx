@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "@/components/ui/Button";
+import images from "@/assets/images";
 
 const HeroSection = () => {
   const navigate = useNavigate();
@@ -8,7 +9,7 @@ const HeroSection = () => {
   return (
     <section
       className="relative bg-cover bg-center bg-no-repeat py-20 px-4 md:px-8"
-      style={{ backgroundImage: "url('/hero.jpg')" }}
+      style={{ backgroundImage: `url(${images.hero})` }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/60"></div>
