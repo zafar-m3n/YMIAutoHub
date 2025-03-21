@@ -5,6 +5,7 @@ import HomePage from "@/pages/home";
 import NotFound from "@/pages/NotFound";
 import FAQ from "@/pages/faq";
 import About from "@/pages/about";
+import Contact from "@/pages/contact";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/home" element={<Navigate to="/" replace />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
