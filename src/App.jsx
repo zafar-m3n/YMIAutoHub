@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import DefaultLayout from "@/layouts/DefaultLayout";
 import HomePage from "@/pages/home";
 import NotFound from "@/pages/NotFound";
+import FAQ from "@/pages/faq";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Route element={<DefaultLayout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<Navigate to="/" replace />} />
+          <Route path="/faq" element={<FAQ />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
