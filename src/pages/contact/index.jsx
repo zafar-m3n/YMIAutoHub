@@ -56,7 +56,7 @@ const Contact = () => {
               <textarea className="w-full border border-gray-300 rounded px-4 py-2" rows={4}></textarea>
             </div>
             <button type="submit" disabled className="bg-blue-600 text-white px-6 py-2 rounded-md cursor-not-allowed">
-              Send Inquiry (Coming Soon)
+              Send Inquiry
             </button>
           </form>
         )}
@@ -84,7 +84,7 @@ const Contact = () => {
               <input type="file" className="w-full" />
             </div>
             <button type="submit" disabled className="bg-blue-600 text-white px-6 py-2 rounded-md cursor-not-allowed">
-              Submit Request (Coming Soon)
+              Submit Request
             </button>
           </form>
         )}
