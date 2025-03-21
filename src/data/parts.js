@@ -4,14 +4,14 @@ const parts = [
     category: "Rear Bumper Brackets",
     country_of_manufacture: "Japan",
     image: "placeholder-image.jpg",
-    number_in_stock: 10,
+    number_in_stock: 0,
   },
   {
     name: "Rear Bumper Holder, Left Side - Wagon R 44",
     category: "Rear Bumper Brackets",
     country_of_manufacture: "Japan",
     image: "placeholder-image.jpg",
-    number_in_stock: 10,
+    number_in_stock: 3,
   },
   {
     name: "Rear Bumper Holder, Right Side - Wagon R 55",
